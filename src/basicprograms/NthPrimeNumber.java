@@ -20,6 +20,7 @@ public class NthPrimeNumber {
 			}
 			if (x == i) {
 				count++;
+				System.out.println(i);
 			}
 			i++;
 		}

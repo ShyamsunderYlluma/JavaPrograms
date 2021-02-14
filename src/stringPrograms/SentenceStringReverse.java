@@ -7,12 +7,13 @@ public class SentenceStringReverse {
 		String str;
 		System.out.println("Program Name: Reverse a Setenace of string\nEnter a Sentence of string:");
         Scanner sc  = new Scanner(System.in);
-        str = sc.next();
-		String sstr [] = str.split(" ");
+        str = sc.nextLine();
+		String sstr[] = str.split(" ");
 		String tstr = "";
 		
 		for(int j=0; j<sstr.length; j++) {
 			//System.out.println(sstr[j]);
+			//System.out.println("Length "+sstr.length);
 			char[] arrstr = sstr[j].toCharArray();
 			String tmp2 = "";
 			for (int k=arrstr.length-1; k>=0; k--) {
@@ -20,7 +21,7 @@ public class SentenceStringReverse {
 				tmp2 = tmp2+arrstr[k];
 			}
 			tstr = tstr+" "+tmp2;
-			//System.out.println(tmp2);
+			//System.out.println(tmp2+"  " +tstr);
 		}
 		tstr = tstr.trim();
 		System.out.println(tstr);

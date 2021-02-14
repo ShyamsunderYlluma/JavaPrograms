@@ -11,6 +11,7 @@ public class HCFofTwoNumber {
         n2 = sc.nextInt();
 
 		int k = (n1 < n2) ? n1 : n2;
+		System.out.println("K " + k);
         for(int i = 1; i <= k; ++i)
         {
             // Checks if i is factor of both integers

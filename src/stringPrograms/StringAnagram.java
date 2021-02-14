@@ -24,7 +24,6 @@ public class StringAnagram {
 						MatchCount ++;
 						break;
 					}
-					
 				}
 			}
 			if(MatchCount==str1.length()) {

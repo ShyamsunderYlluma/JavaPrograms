@@ -29,6 +29,7 @@ public class printDuplicateCharCount {
         }
         Set<Map.Entry<Character, Integer>> entrySet = charMap.entrySet(); 
         System.out.printf("List of duplicate characters in String '%s' %n", str);
+       
         for (Map.Entry<Character, Integer> entry : entrySet){
         	if (entry.getValue() > 1) {
         	System.out.printf("%s : %d %n", entry.getKey(), entry.getValue());
